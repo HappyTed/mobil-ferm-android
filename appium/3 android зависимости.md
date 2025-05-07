@@ -4,12 +4,13 @@ https://appium.io/docs/en/latest/quickstart/uiauto2-driver/
 - Самый простой способ настроить требования Android SDK — загрузить Android Studio . Нам нужно использовать его менеджер SDK ( Настройки -> Языки и фреймворки -> Android SDK ), чтобы загрузить следующие элементы:
 1. Платформа Android SDK (выберите любую платформу Android, которую вы хотите автоматизировать, например, API уровня 30)
 2. Android SDK Platform-Tools
-- При желании вы также можете загрузить эти элементы без Android Studio:
-1. Платформу Android SDK можно загрузить с помощью sdkmanagerвстроенных в [Android инструментов командной строки](https://developer.android.com/studio#command-line-tools-only).
+- При желании вы также можете загрузить эти элементы без Android Studio: **(я предпочитаю этот способ)**
+1. Платформу Android SDK можно загрузить с помощью sdkmanager встроенных в [Android инструментов командной строки](https://developer.android.com/studio#command-line-tools-only).
 2. [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools)
 
 
-установить последнюю версию JDK (с сайта oracle)
+### установить последнюю версию Open JDK 
+с сайта oracle https://jdk.java.net/24/
 
 ### переменные окруженич
 
@@ -26,5 +27,17 @@ https://appium.io/docs/en/latest/quickstart/uiauto2-driver/
 
 
 ### bundletool.jar
-download the binary from https://github.com/google/bundletool/releases/ and store it to /usr/local/bin 
-или в любой другой путь из перемнной $PATH
+download the binary from https://github.com/google/bundletool/releases/ and store it to ...(/usr/local/bin или в любой другой путь из перемнной $PATH)
+
+
+
+### проверить adb: 
+
+`adb devices`
+
+ожидаем:
+```shell
+/$ adb devices
+List of devices attached
+RF8WC0FV4JH     device
+```

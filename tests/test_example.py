@@ -5,8 +5,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 
 capabilities = dict(
     platformName='Android',
-    automationName='uiautomator2',
-    deviceName='Android',
+    automationName='uiautomator2', 
+    deviceName='Android', # или имя реального устройства из `adb devices
     appPackage='com.android.settings',
     appActivity='.Settings',
     language='en',

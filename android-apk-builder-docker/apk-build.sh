@@ -7,7 +7,7 @@ fi
 
 PROJECT_DIR="$1"
 DEST="$(pwd)"
-LOGFILE="$DEST/build-apk.log"
+LOGFILE="$DEST/apk-build.log"
 
 echo "$PROJECT_DIR"
 
@@ -15,7 +15,7 @@ source .env
 
 echo "[*] Сборка apk, вывод перенаправлен в $LOGFILE..."
 
-docker run --rm -v $PROJECT_DIR:/home/app -w /home/app android-build:$TAG gradle assembleDebug --info --stacktrace > "$LOGFILE" 2>&1
+docker run --rm -v $PROJECT_DIR:/home/app -w /home/app android-apk-builder:$TAG gradle assembleDebug --info --stacktrace > "$LOGFILE" 2>&1
 
 cp "$PROJECT_DIR/app/build/outputs/apk/debug/app-debug.apk" "$(pwd)"
 echo "[+] app-debug.apk сохранён в $DEST"

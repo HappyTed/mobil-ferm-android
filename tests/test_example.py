@@ -9,8 +9,8 @@ capabilities = dict(
     deviceName='Android', # или имя реального устройства из `adb devices
     appPackage='com.android.settings',
     appActivity='.Settings',
-    language='en',
-    locale='US'
+    # language='en',
+    # locale='US'
 )
 
 appium_server_url = 'http://localhost:4723'

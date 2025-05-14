@@ -1,3 +1,6 @@
 [submodule "mobile-app"]
 	path = mobile-app
 	url = git@lab.altkraft.com:altkraft-testing/mobile-app.git
+[submodule "appium-docker-android"]
+	path = appium-docker-android
+	url = https://github.com/appium/appium-docker-android.git

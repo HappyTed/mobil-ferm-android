@@ -3,12 +3,12 @@ from appium import webdriver
 from appium.options.android import UiAutomator2Options
 from pathlib import Path
 
-path_to_app = str(Path.home() / "Documents/mobil-ferm-android/mobileApps/app-debug.apk")
+path_to_app = str(Path.home() / "/home/androidusr/sample.apk") 
 
 capabilities = {
     "platformName": "Android",
     "automationName": "UiAutomator2",
-    "deviceName": "09859373A5004645",  # заменить на свой
+    "deviceName": "Android", 
     "app": path_to_app
 }
 

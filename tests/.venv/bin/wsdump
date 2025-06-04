@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/home/grachev/Documents/mobil-ferm-android/tests/.venv/bin/python3
+=======
+#!/home/grachev/Documents/mobile-ferm-android/tests/.venv/bin/python3
+>>>>>>> dev
 # -*- coding: utf-8 -*-
 import re
 import sys

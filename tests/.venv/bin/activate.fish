@@ -33,7 +33,11 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV /home/grachev/Documents/mobil-ferm-android/tests/.venv
+=======
+set -gx VIRTUAL_ENV /home/grachev/Documents/mobile-ferm-android/tests/.venv
+>>>>>>> dev
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

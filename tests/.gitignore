@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 .venv/*
 .venv
+=======
+*.png
+.venv/*
+>>>>>>> dev

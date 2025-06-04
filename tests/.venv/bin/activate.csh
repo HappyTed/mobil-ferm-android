@@ -9,7 +9,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV /home/grachev/Documents/mobil-ferm-android/tests/.venv
+=======
+setenv VIRTUAL_ENV /home/grachev/Documents/mobile-ferm-android/tests/.venv
+>>>>>>> dev
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/"bin":$PATH"

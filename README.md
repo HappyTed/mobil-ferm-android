@@ -1,4 +1,4 @@
-# ADB
+# ADB команды
 
 список доступных устройств:
 ```
@@ -15,6 +15,20 @@ adb restart:
 adb kill-server
 adb start-server
 ```
+
+# Запуск Appium в контейнере 
+
+1. выполнить из `appium-docker-android`
+```
+$ docker build -t "appium/appium:local" -f Appium/Dockerfile Appium
+```
+2. запустить контейнер
+```
+$ docker run --privileged -d -p 4723:4723  -v /dev/bus/usb:/dev/bus/usb --name appium-container appium/appium:local
+```
+3. подключить устройство через usb, дать разрешение
+4. выполнить `adb devices` внутри контейнера. Должно быть подключенное устройство
+
 
 # Развернуть appium-сервер локально
 

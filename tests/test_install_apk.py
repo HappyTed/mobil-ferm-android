@@ -3,7 +3,7 @@ from appium import webdriver
 from appium.options.android import UiAutomator2Options
 from pathlib import Path
 
-path_to_app = str(Path.home() / "/home/androidusr/sample.apk") 
+path_to_app = "/home/grachev/Documents/mobile-ferm-android/apk-builder/apks/fromAndrey.apk" 
 
 capabilities = {
     "platformName": "Android",

@@ -1,4 +1,4 @@
-#!/home/teodor/Documents/mobil-ferm-android/tests/.venv/bin/python3
+#!/home/grachev/Documents/mobile-ferm-android/tests/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
